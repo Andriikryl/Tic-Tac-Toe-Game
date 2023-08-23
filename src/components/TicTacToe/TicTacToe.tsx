@@ -15,6 +15,9 @@ import { ResultModal } from "../modal/ResultModal";
 
 import style from "./stlyle.module.css";
 import Button from "../button/Button";
+import EasyDescription from "../easy/EasyDescription";
+import MediumDescription from "../medium/MediumDescription";
+import DifficultDescription from "../difficult/DifficultDescription";
 
 const arr = new Array(DIMENSIONS ** 2).fill(null);
 const board = new Board();
@@ -164,6 +167,9 @@ const TicTacToe = ({ squares = arr }: Props) => {
             );
           })}
         </select>
+        {mode === GAME_MODES.easy && <EasyDescription />}
+        {mode === GAME_MODES.medium && <MediumDescription />}
+        {mode === GAME_MODES.difficult && <DifficultDescription />}
       </div>
       <div className={style.select__box}>
         <p className={style.button__title}>Choose your player</p>

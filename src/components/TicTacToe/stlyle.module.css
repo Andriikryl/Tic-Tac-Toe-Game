@@ -1,18 +1,114 @@
+.select__box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-block: clamp(10px, 5vw, 40px);
+  padding-inline: clamp(10px, 5vw, 60px);
+  background-color: hsl(208, 97%, 87%, .7);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.08), 
+  0 2px 2px rgba(0,0,0,0.12), 
+  0 4px 4px rgba(0,0,0,0.16), 
+  0 8px 8px rgba(0,0,0,0.20);
+  border-radius: 20px;
+}
+
+.select__titel{
+  font-size: clamp(20px, 5vw + 1rem, 30px);
+  margin-block-end: 20px;
+  text-align: center;
+}
+
+.select{
+  padding: 10px 25px;
+  font-size: 20px;
+  background-color: hsl(52, 94%, 94%, .6);
+  border-radius: 10px;
+  color: #1d3557;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.08), 
+  0 2px 2px rgba(0,0,0,0.12), 
+  0 4px 4px rgba(0,0,0,0.16), 
+  0 8px 8px rgba(0,0,0,0.20);
+}
+
+.wrapper{
+  background-color: hsl(278, 35%, 78%, 05);
+  background-image: linear-gradient(to right, #faedcd 1px, transparent 1px),
+    linear-gradient(to bottom, #faedcd 1px, transparent 1px);
+  background-size: 24px 24px;
+  padding-block: clamp(10px, 5vw, 70px);
+  padding-inline: clamp(10px, 5vw, 100px);
+  border-radius: 20px;
+  backdrop-filter: blur(30px);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.25), 
+  0 2px 2px rgba(0,0,0,0.20), 
+  0 4px 4px rgba(0,0,0,0.15), 
+  0 8px 8px rgba(0,0,0,0.10),
+  0 16px 16px rgba(0,0,0,0.05);
+}
+
+.button__title{
+  font-size: 20px;
+  margin-block-end: 25px;
+}
+
+.flex__group{
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .container {
     display: flex;
     justify-content: center;
     flex-flow: wrap;
     position: relative;
+    max-width: 300px;
+    background-color: hsl(182, 43%, 76%, .4);   
+    margin-inline: auto;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+    0 2px 2px rgba(0,0,0,0.11), 
+    0 4px 4px rgba(0,0,0,0.11), 
+    0 6px 8px rgba(0,0,0,0.11),
+    0 8px 16px rgba(0,0,0,0.11);
   }
-  
+  .strikethrough {
+    position: absolute;
+    height: 5px;
+    width: 0px;
+  }
+
+  .btn__text{
+    font-size: 30px;
+  }
+
+  .square__text{
+    font-size: 68px;
+  }
   .square {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100px;
     height: 100px;
-    border: 1px solid black;
+    border: 1px solid #ffe5ec;
     cursor: pointer;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15), 
+    0 2px 2px rgba(0,0,0,0.15), 
+    0 4px 4px rgba(0,0,0,0.15), 
+    0 8px 8px rgba(0,0,0,0.15);
+    transition: all 500ms ease-in-out;
+    color: #1d3557;
+  }
+
+  .square:hover{
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+    0 2px 2px rgba(0,0,0,0.11), 
+    0 4px 4px rgba(0,0,0,0.11), 
+    0 8px 8px rgba(0,0,0,0.11), 
+    0 16px 16px rgba(0,0,0,0.11), 
+    0 32px 32px rgba(0,0,0,0.11);
   }
   
   .marker {

@@ -1,0 +1,15 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: radial-gradient(#e5e7eb 2px, transparent 1px);
+    background-size:16px 16px;
+}
+
+.game__title{
+  color: #8ecae6;
+  text-align: center;
+  font-size: clamp(25px, 5vw + 1rem, 50px);
+  margin-block-end: 20px;
+}

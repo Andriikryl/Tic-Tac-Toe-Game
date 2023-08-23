@@ -1,5 +1,11 @@
+import TicTacToe from "./components/TicTacToe/TicTacToe";
+
 function App() {
-  return <main>das</main>;
+  return (
+    <main>
+      <TicTacToe />
+    </main>
+  );
 }
 
 export default App;

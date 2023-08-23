@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    position: relative;
+  }
+  
+  .square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+  
+  .marker {
+    font-size: 68px;
+  }
+  

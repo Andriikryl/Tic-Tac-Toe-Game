@@ -3,8 +3,8 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: radial-gradient(#e5e7eb 2px, transparent 1px);
-    background-size:16px 16px;
+    /* background-image: radial-gradient(#e5e7eb 2px, transparent 1px);
+    background-size:16px 16px; */
 }
 
 .game__title{
